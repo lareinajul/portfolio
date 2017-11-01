@@ -4,7 +4,7 @@
 */
 
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+h1, h2, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -19,7 +19,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	/*font-size: 100%;*/
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -36,6 +36,7 @@ body {
 }
 .toprow {
 position: absolute;
+flex-direction: column;
   display: flex;
 width: 100%;
 background-color: lightgreen;
@@ -45,10 +46,14 @@ top:0;
 left:0;
 right:0;
 bottom: 50%;
+text-align: center;
+font-size: large;
+color: white;
 }
 .bottomrow {
   position: absolute;
   display: flex;
+	height: 400px;
   flex-direction: row;
   top:50%;
   right:0;
@@ -68,9 +73,10 @@ bottom: 50%;
     padding-top:20px;
     padding-bottom:20px;
     color: white;
-    font-size: x-large;
+    font-size: medium;
     text-align: center;
     align-items: center;
+		width: 30%;
 }
 .title{
 color: white;
@@ -94,6 +100,9 @@ align-self: center;
 }
 .green{
   background-color: green;
+}
+p {
+	display: inline;
 }
 @media (max-width: 700px){
 .bottomrow {
